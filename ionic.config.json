@@ -1,0 +1,7 @@
+{
+  "name": "piggy-bank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
