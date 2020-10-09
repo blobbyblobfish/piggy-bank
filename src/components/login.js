@@ -1,26 +1,24 @@
 import React, { Component } from "react";
+import { Form, Button } from 'react-bootstrap';
 
 export default class Login extends Component {
     render() {
         return (
-            <form>
-                <h3>Log In</h3>
+            <Form>
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" placeholder="Enter email" />
+                </Form.Group>
 
-                <div className="form-group">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
-                </div>
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
 
-                <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
-                </div>
-                
-                <button type="submit" className="btn btn-primary btn-block">Submit</button>
-                <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
-                </p>
-            </form>
+                <Button variant="primary" type="submit">
+                    Submit
+                </Button>
+            </Form>
         );
     }
 }
