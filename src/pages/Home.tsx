@@ -1,5 +1,5 @@
 //import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader, IonInput, IonItem, IonLabel, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
-import React from 'react';
+import React, { Component } from 'react'
 // import ExploreContainer from '../components/ExploreContainer';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './Home.css';
@@ -7,9 +7,11 @@ import './Home.css';
 import Login from '../components/login';
 import SignUp from '../components/signup';
 
-const Home: React.FC = () => {
-  return (
-    <Router>
+export default class Home extends Component {
+  render() {
+    return (
+
+      <Router>
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
         <h1> Welcome to the Piggy-Bank </h1>
@@ -36,8 +38,14 @@ const Home: React.FC = () => {
         </div>
       </div>
     </Router>
-    
-  );
-};
 
-export default Home;
+      
+      // <div>
+      //   <br></br>
+      //   <SignUp/>
+      //   <br />
+      //   <Login />
+      // </div>
+    )
+  }
+}
