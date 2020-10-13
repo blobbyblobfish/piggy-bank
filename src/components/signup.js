@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-const API = 'http://localhost:5000/api/auth'
+const API = 'http://localhost:5000/api/users'
 
 class SignUp extends Component {
 
     state = {
-      firstName: '',
-      lastName: '',
+      firstname: '',
+      lastname: '',
       email: '',
       password: '',
       id: 0
@@ -19,7 +19,7 @@ class SignUp extends Component {
   
     onSubmit = (e) => {
       const user = { ...this.state }
-      if (user.firstName !== '' && user.lastName !== '' && user.email !== '' && user.password !== '') {
+      if (user.firstname !== '' && user.lastname !== '' && user.email !== '' && user.password !== '') {
         console.log(user);
         e.preventDefault()
         fetch(API, {
@@ -34,28 +34,28 @@ class SignUp extends Component {
     }
 
   render() {
-    const { firstName, lastName, email, password } = this.state
+    const { firstname, lastname, email, password } = this.state
     return (
       <form onSubmit={this.onSubmit}>
         <div className="form-row">
           <div className="form-group col-md-6">
-            <label htmlFor="firstName"> First Name</label>
+            <label htmlFor="firstname"> First Name</label>
             <input
               type="text"
               className="form-control"
-              name="firstName"
+              name="firstname"
               placeholder="Enter first name"
-              value={firstName}
+              value={firstname}
               onChange={this.onChange} />
           </div>
           <div className="form-group col-md-6">
-            <label htmlFor="lastName"> Last Name</label>
+            <label htmlFor="lastname"> Last Name</label>
             <input
               type="text"
               className="form-control"
-              name="lastName"
+              name="lastname"
               placeholder="Enter last name"
-              value={lastName}
+              value={lastname}
               onChange={this.onChange} />
           </div>
           <div className="form-group col-md-6">
