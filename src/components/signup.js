@@ -43,7 +43,7 @@ class SignUp extends Component {
           <div className="form-row arkalogin">
         <div class="loginbaslik">Please Sign up</div>
           <div className="form-group">
-            <label htmlFor="firstname"> First Name</label>
+            {/* <label htmlFor="firstname"> First Name</label> */}
             <input
               type="text"
               className="form-control giris"
@@ -53,7 +53,7 @@ class SignUp extends Component {
               onChange={this.onChange} />
           </div>
           <div className="form-group">
-            <label htmlFor="lastname"> Last Name</label>
+            {/* <label htmlFor="lastname"> Last Name</label> */}
             <input
               type="text"
               className="form-control giris"
@@ -63,7 +63,7 @@ class SignUp extends Component {
               onChange={this.onChange} />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            {/* <label htmlFor="email">Email</label> */}
             <input
               type="text"
               className="form-control giris"
@@ -73,7 +73,7 @@ class SignUp extends Component {
               onChange={this.onChange} />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            {/* <label htmlFor="password">Password</label> */}
             <input
               type="password"
               className="form-control giris"
