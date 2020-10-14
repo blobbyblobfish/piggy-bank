@@ -13,6 +13,7 @@ export default function Course(props) {
 
     return (
         <div className="course">
+            <img src="https://source.unsplash.com/random" alt="Logo" />
             <h1>{course.name}</h1>
             {renderLessons()}
         </div>
