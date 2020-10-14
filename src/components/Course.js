@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './Course.css';
 import Lesson from './Lesson.js'
 
 export default function Course(props) {
