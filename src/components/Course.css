@@ -9,6 +9,11 @@
     animation: BackgroundGradient 30s ease infinite;
 }
 
+.coursesContainer h1{
+    margin: 0;
+    padding: 0;
+}
+
 .course h1{
     color:black;
     text-decoration: underline;
@@ -18,6 +23,7 @@
     color:white;
 }
 .course{
+    border-radius: 25px;
     width: 300px;
     margin-top: 2px;
     border: 5px solid black;

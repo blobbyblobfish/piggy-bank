@@ -12,7 +12,7 @@ export default function Courses(props) {
 
     return (
         <div className="coursesContainer">
-            <h1>HI THIS IS THE COURSES PAGE!!!!!!</h1>
+            <h1>View Courses Below!</h1>
             {renderCourses()}
         </div>
     )
