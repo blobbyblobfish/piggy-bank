@@ -28,6 +28,7 @@ class Login extends Component {
           }
         }).then(res => res.json())
           .then(response => console.log('Success:', JSON.stringify(response)))
+          .then(this.props.history.push("/courses"))
       }
     }
 
@@ -58,7 +59,7 @@ class Login extends Component {
           </div>
           <input
             type="submit"
-            value="Sign Up"
+            value="Login"
             className="btn btn-dark btn-block" />
         </div>
       </form>

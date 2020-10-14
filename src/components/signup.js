@@ -30,6 +30,7 @@ class SignUp extends Component {
           }
         }).then(res => res.json())
           .then(response => console.log('Success:', JSON.stringify(response)))
+          .then(this.props.history.push("/courses"))
       }
     }
 
