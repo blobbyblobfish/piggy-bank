@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Login.css';
 const API = 'http://localhost:5000/api/users'
 
 class SignUp extends Component {
@@ -37,43 +38,45 @@ class SignUp extends Component {
   render() {
     const { firstname, lastname, email, password } = this.state
     return (
+      <div className="container">
       <form onSubmit={this.onSubmit}>
-        <div className="form-row">
-          <div className="form-group col-md-6">
+          <div className="form-row arkalogin">
+        <div class="loginbaslik">Please Sign up</div>
+          <div className="form-group">
             <label htmlFor="firstname"> First Name</label>
             <input
               type="text"
-              className="form-control"
+              className="form-control giris"
               name="firstname"
               placeholder="Enter first name"
               value={firstname}
               onChange={this.onChange} />
           </div>
-          <div className="form-group col-md-6">
+          <div className="form-group">
             <label htmlFor="lastname"> Last Name</label>
             <input
               type="text"
-              className="form-control"
+              className="form-control giris"
               name="lastname"
               placeholder="Enter last name"
               value={lastname}
               onChange={this.onChange} />
           </div>
-          <div className="form-group col-md-6">
+          <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
               type="text"
-              className="form-control"
+              className="form-control giris"
               name="email"
               placeholder="Enter email"
               value={email}
               onChange={this.onChange} />
           </div>
-          <div className="form-group col-md-6">
+          <div className="form-group">
             <label htmlFor="password">Password</label>
             <input
               type="password"
-              className="form-control"
+              className="form-control giris"
               name="password"
               placeholder="password"
               value={password}
@@ -82,9 +85,10 @@ class SignUp extends Component {
           <input
             type="submit"
             value="Sign Up"
-            className="btn btn-dark btn-block" />
+            className="btn btn-dark btn-block butonlogin" />
         </div>
       </form>
+      </div>
     )
   }
 }
