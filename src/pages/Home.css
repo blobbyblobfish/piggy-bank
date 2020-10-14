@@ -1,0 +1,67 @@
+
+.home-div{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(132deg, #f44336, #E91E63, #9C27B0, #673AB7, #3F51B5, #2196F3,#03A9F4, #00BCD4, #009688, #4CAF50, #FFC107, #FF9800, #f44336, #E91E63, #9C27B0, #673AB7, #3F51B5, #2196F3,#03A9F4, #00BCD4, #009688, #4CAF50, #FFC107, #FF9800);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 30s ease infinite;
+}
+
+.login-signup-div{
+    text-align: center;
+    /* margin: auto;
+    width: 50%;
+    padding: 10px; */
+ }
+
+ img{
+    /* display: block;
+    text-align: center; */
+    margin-top: 10%;
+    width: 400px;
+    height: 300px;
+ }
+
+.loginButton{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    transition: all 250ms;
+    text-decoration: none;
+    }
+
+.loginButton:hover{
+    background: #1E88E5;
+    text-decoration: none;
+    }
+
+    .signUpButton{
+        display: inline-block;
+        margin-left: 1px;
+        width: 200px;
+        height: 50px;
+        background: #4E9CAF;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+    }
+
+    .signUpButton:hover{
+        transition: all 250ms;
+        background: #1E88E5;
+        }
+
+
+   

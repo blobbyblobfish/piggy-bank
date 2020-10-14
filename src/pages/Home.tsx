@@ -2,6 +2,7 @@
 // import ExploreContainer from '../components/ExploreContainer';
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
+import logo from '../images/logoImage.png'
 import './Home.css';
 
 // import Login from '../components/login';
@@ -10,9 +11,12 @@ import './Home.css';
 export default class Home extends Component {
   render() {
     return (
-      <div className = "landingPage">
-        <NavLink className = "loginButton" to="/login">Login</NavLink>
-        <NavLink className = "signUpButton" to="/signup">Sign Up</NavLink>
+      <div className = "home-div">
+        <img src={logo} alt="Logo" />
+            <div className = "login-signup-div">
+              <NavLink className = "loginButton" to="/login">Login</NavLink>
+              <NavLink className = "signUpButton" to="/signup">Sign Up</NavLink>
+          </div>
       </div>
     )
   }
