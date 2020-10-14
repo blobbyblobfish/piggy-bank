@@ -1,5 +1,6 @@
 import React from 'react';
 import './LessonsContainer.css';
+import Lesson from './Lesson.js'
 
 const lessons = [
   {
@@ -13,7 +14,8 @@ const lessons = [
         b: "Snakes, Mooses, Alligators, Rabbits, Turtles",
         c: "Sugar, Meatloaf, Applesauce, Raisins, Toast"
       },
-      correct_choice: "a"
+      correct_choice: "a",
+      max_value: 50 // we could award 100% for correct answer on first try, 75% for second, etc.
     }
   }
 ]
@@ -31,6 +33,7 @@ const LessonsContainer = () => {
       <strong>Lessons</strong>
       {/* Render a button for each lesson that navigates to the lesson page*/}
       {renderLessonsList()}
+      <Lesson key={1} id={1} title={"Saving for Something Special"}/>
     </div>
   );
 };
