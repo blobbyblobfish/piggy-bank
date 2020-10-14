@@ -1,6 +1,6 @@
 import React from 'react';
 import './LessonsContainer.css';
-import Lesson from './Lesson.js'
+import Lesson from '../components/Lesson.js'
 
 const lessons = [
   {

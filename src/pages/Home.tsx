@@ -1,26 +1,20 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import React from 'react';
-import ExploreContainer from '../components/LessonsContainer';
+//import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonContent, IonGrid, IonHeader, IonInput, IonItem, IonLabel, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
+// import ExploreContainer from '../components/ExploreContainer';
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
 import './Home.css';
 
-const Home: React.FC = () => {
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
-      </IonContent>
-    </IonPage>
-  );
-};
+// import Login from '../components/login';
+// import SignUp from '../components/signup';
 
-export default Home;
+export default class Home extends Component {
+  render() {
+    return (
+      <div className = "landingPage">
+        <NavLink className = "loginButton" to="/login">Login</NavLink>
+        <NavLink className = "signUpButton" to="/signup">Sign Up</NavLink>
+      </div>
+    )
+  }
+}
+
