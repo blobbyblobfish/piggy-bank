@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Redirect, BrowserRouter as Router, Switch, Route, Link, withRouter } from 'react-router-dom';
+import { Redirect, BrowserRouter as Router, Switch, Route, Link, match, RouteComponentProps } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
@@ -27,6 +27,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { State } from 'ionicons/dist/types/stencil-public-runtime';
 
 const App: React.FC = () => { 
   
@@ -38,8 +39,9 @@ const App: React.FC = () => {
           id: 1,
           name: "Saving For Something Special",
           video_url: "https://www.youtube.com/embed/JkCmIxraWlM",
-          question: [
+          questions: [
             {
+              id: 1,
               question_text: "What does SMART stand for?",
               question_choices: {
                 a: "Specific, Measurable, Attainable, Relevant, Time-based",
@@ -54,7 +56,17 @@ const App: React.FC = () => {
       {
         id: 2,
         name: "Taxes",
-        lessons: [{}]
+        lessons: [{
+          id: 2.,
+          name: "Your Taxes Explained",
+          video_url: "https://www.youtube.com/watch?v=RVkUUPu0VXA&ab_channel=richardcranium90210",
+          questions: [
+            {
+              id: 2,
+              question_text: "Lorem ipsum"
+            }
+          ]
+        }]
       },
       {
         id: 3,
@@ -64,8 +76,36 @@ const App: React.FC = () => {
     ]
   )
 
+  const [lessons, setLessons] = useState([
+    {
+      id: 1,
+      course_id: 1, //this might be an easier way to find associations
+      name: "Saving For Something Special",
+      video_url: "https://www.youtube.com/embed/JkCmIxraWlM",
+      question: [
+        {
+          question_text: "What does SMART stand for?",
+          question_choices: {
+            a: "Specific, Measurable, Attainable, Relevant, Time-based",
+            b: "Snakes, Mooses, Alligators, Rabbits, Turtles",
+            c: "Sugar, Meatloaf, Applesauce, Raisins, Toast"
+          },
+          correct_choice: "a"
+        }
+      ]
+    },
+    {},
+    {}
+  ])
+
   function renderCourses() {
     return <CoursesContainer courses={courses} />
+  }
+
+  type Props = {id: string}
+
+  function renderLesson( { match }: RouteComponentProps<Props>) {
+    return <Lesson key={match.params.id} lesson={lessons.find(lesson => lesson.id === parseInt(match.params.id))} />
   }
 
   return (
@@ -77,7 +117,7 @@ const App: React.FC = () => {
           <Route path="/login" component={Login} exact={true} />
           <Route path="/signup" component={SignUp} exact={true} />
           <Route path="/courses" render={renderCourses} exact={true} />
-          <Route path="/lessons/:id" render={Lesson} exact={true} />
+          <Route path="/lesson/:id" render={renderLesson} exact={true} />
           </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>
@@ -114,6 +154,3 @@ const App: React.FC = () => {
 }
 
 export default App
-
-// const AppWithRouter = withRouter(App)
-// export default AppWithRouter
