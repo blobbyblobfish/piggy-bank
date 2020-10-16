@@ -7,7 +7,7 @@ export default function Course(props) {
     const course = props.course
 
     function renderLessons() {
-        return course.lessons.map(lesson => <NavLink key={lesson.id} to={`/lesson/${lesson.id}`} > { lesson.name } </NavLink>)
+        return course.lessons.map(lesson => <NavLink key={lesson.id} to={`/courses/lesson/${lesson.id}`} > { lesson.name } </NavLink>)
     }
 
     return (
