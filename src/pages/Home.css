@@ -9,6 +9,15 @@
     animation: BackgroundGradient 30s ease infinite;
 }
 
+/* .home-container{
+    width: 500px;
+    text-align: center;
+    background: #fff;
+    height: 500px;
+    padding: 10px;
+    margin-left: 25%;
+} */
+
 .login-signup-div{
     text-align: center;
     /* margin: auto;
@@ -22,9 +31,11 @@
     margin-top: 10%;
     width: 400px;
     height: 300px;
+    background: #fff
  }
 
 .loginButton{
+    margin-top: 3px;
     display: inline-block;
     width: 200px;
     height: 50px;
@@ -32,7 +43,7 @@
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-weight: bold;
     line-height: 25px;
     transition: all 250ms;
@@ -40,11 +51,12 @@
     }
 
 .loginButton:hover{
-    background: #1E88E5;
+    background: #9C27B0;
     text-decoration: none;
     }
 
     .signUpButton{
+        margin-top: 3px;
         display: inline-block;
         margin-left: 1px;
         width: 200px;
@@ -53,14 +65,15 @@
         padding: 10px;
         text-align: center;
         border-radius: 5px;
-        color: white;
+        color: black;
         font-weight: bold;
         line-height: 25px;
     }
 
     .signUpButton:hover{
+        text-decoration: none;
         transition: all 250ms;
-        background: #1E88E5;
+        background: #9C27B0;
         }
 
 

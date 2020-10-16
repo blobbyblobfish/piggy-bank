@@ -10,11 +10,12 @@
 }
 
 .coursesContainer h1{
+    color: white;
     margin: 0;
     padding: 0;
 }
 
-img {
+.coursesContainer img {
     margin-top: 5px;
     border-radius: 50%;
     width: 75px;
