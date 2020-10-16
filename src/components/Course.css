@@ -1,0 +1,47 @@
+.coursesContainer {
+    /* background: blue; */
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(132deg, #9C27B0, #673AB7, #3F51B5, #2196F3,#03A9F4, #00BCD4);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 30s ease infinite;
+}
+
+.coursesContainer h1{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.coursesContainer img {
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+
+.course h1{
+    color:black;
+    text-decoration: underline;
+}
+
+.course a{
+    color:white;
+}
+.course{
+    border-radius: 25px;
+    width: 300px;
+    margin-top: 2px;
+    border: 5px solid black;
+    /* padding: 5px; */
+    margin: 20px auto;
+}
+
+.course:nth-of-type(even){
+    background-color: orange;
+}
+.course:nth-of-type(odd){
+    background-color: purple;
+}

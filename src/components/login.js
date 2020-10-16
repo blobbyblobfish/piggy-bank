@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Login.css';
 const API = 'http://localhost:5000/api/auth'
 
 class Login extends Component {
@@ -28,29 +29,32 @@ class Login extends Component {
           }
         }).then(res => res.json())
           .then(response => console.log('Success:', JSON.stringify(response)))
+          .then(this.props.history.push("/courses"))
       }
     }
 
   render() {
     const {  email, password } = this.state
     return (
+      <div className="container">
       <form onSubmit={this.onSubmit}>
-        <div className="form-row">
-          <div className="form-group col-md-6">
-            <label htmlFor="email">Email</label>
+        <div className="form-row arkalogin">
+        <div class="loginbaslik">Please Log In</div>
+          <div className="form-group ">
+            {/* <label htmlFor="email">Email</label> */}
             <input
               type="text"
-              className="form-control"
+              className="form-control giris"
               name="email"
               placeholder="Enter email"
               value={email}
               onChange={this.onChange} />
           </div>
-          <div className="form-group col-md-6">
-            <label htmlFor="password">Password</label>
+          <div className="form-group">
+            {/* <label htmlFor="password">Password</label> */}
             <input
               type="password"
-              className="form-control"
+              className="form-control giris"
               name="password"
               placeholder="password"
               value={password}
@@ -58,10 +62,11 @@ class Login extends Component {
           </div>
           <input
             type="submit"
-            value="Sign Up"
-            className="btn btn-dark btn-block" />
+            value="Login"
+            className="btn btn-dark btn-block butonlogin" />
         </div>
       </form>
+      </div>
     )
   }
 }
