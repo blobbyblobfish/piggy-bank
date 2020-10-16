@@ -1,0 +1,29 @@
+.lesson-container{
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(132deg, #9C27B0, #673AB7, #3F51B5, #2196F3,#03A9F4, #00BCD4);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 30s ease infinite;
+}
+
+.lesson-container h1{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.lesson-video{
+
+}
+
+.done-btn{
+    display: block;
+    text-align: center;
+    margin-left: 45%;
+    /* width: 100%;
+    height: 30%; */
+    /* justifyContent: center;
+    alignItems: center; */
+}
