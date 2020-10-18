@@ -3,7 +3,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -129,7 +128,7 @@ Shivay:
 [issues-url]: https://github.com/blobbyblobfish/piggy-bank/issues
 [license-shield]: https://img.shields.io/github/license/blobbyblobfish/piggy-bank.svg?style=flat-square
 [license-url]: https://github.com/blobbyblobfish/piggy-bank/blob/master/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+<!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555 -->
 [twitter-shield]:https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FSincerelyBrittt
 [brittany-twitter-url]: https://twitter.com/SincerelyBrittt
 [product-screenshot]: https://github.com/blobbyblobfish/piggy-bank/blob/readme/public/assets/images/readmeImage.png
