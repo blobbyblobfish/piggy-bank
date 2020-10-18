@@ -16,7 +16,6 @@
   <p align="center">
     This is the first project/sprint built for the MLH Explorer Fellowship, built by <a href="https://github.com/shivaylamba"> Shivay Lamba </a> , <a href="https://github.com/blobbyblobfish">Alice </a>, and <a href="https://github.com/SincerelyBrittany"> Brittany </a>. The goal for this sprint was to create an Educational application. With this in mind, we built an application using Ionic and React to help young kids learn about finances. The application allows a user to sign up and log in, then review courses and lessons. After a lesson is complete, a user will be redirected to a quiz, which upon completion will give the user "money" towards their "piggy-bank." This application was built in a two week span. 
     <br />
-     ·
     <a href="https://github.com/blobbyblobfish/piggy-bank/issues">Report Bug</a>
     ·
     <a href="https://github.com/blobbyblobfish/piggy-bank/issues">Request Feature</a> 
