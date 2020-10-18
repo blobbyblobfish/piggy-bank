@@ -7,9 +7,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://www.example.com/">
+  <!-- <a href="https://www.example.com/">
     <img src="" alt="Logo" >
-  </a>
+  </a> -->
 
   <h3 align="center"> Piggy Bank </h3>
 
