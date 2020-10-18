@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Question from './Question.js'
+import './Quiz.css';
 
 export default function Quiz(props) {
 
@@ -16,9 +17,11 @@ export default function Quiz(props) {
     
 
     return (
-        <div>
+        <div className="quizContainer">
             <h1>Start Quiz</h1>
+            <div className="questionsContainer">
             {renderQuestions()}
+            </div>
         </div>
     )
 }
