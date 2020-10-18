@@ -126,7 +126,7 @@ Shivay:
 [issues-shield]: https://img.shields.io/github/issues/blobbyblobfish/piggy-bank.svg?style=flat-square
 [issues-url]: https://github.com/blobbyblobfish/piggy-bank/issues
 [license-shield]: https://img.shields.io/github/license/blobbyblobfish/piggy-bank.svg?style=flat-square
-[license-url]: https://github.com/blobbyblobfish/piggy-bank/blob/master/LICENSE
+[license-url]: https://github.com/blobbyblobfish/piggy-bank/blob/readme/LICENSE
 <!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555 -->
 [twitter-shield]:https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FSincerelyBrittt
 [brittany-twitter-url]: https://twitter.com/SincerelyBrittt
