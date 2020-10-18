@@ -15,7 +15,7 @@
   <h3 align="center"> Piggy Bank </h3>
 
   <p align="center">
-    This is the first project built for the MLH Explorer Fellowship, built by <a href="https://github.com/shivaylamba"> Shivay Lamba </a> , <a href="https://github.com/blobbyblobfish">Alice </a>, and <a href="https://github.com/SincerelyBrittany"> Brittany </a>. The goal for this sprint was to create an Educational application. With this in mind, we built an applcation using Ionic and React to help young kids learn about finances. The application allows a user to sign up and log in, then review courses and lessons. After a lesson is complete, a user will be redirected to a quiz, which upon completion will give the user "money" towads their "piggy-bank." This application was built in a two week span. 
+    This is the first project/sprint built for the MLH Explorer Fellowship, built by <a href="https://github.com/shivaylamba"> Shivay Lamba </a> , <a href="https://github.com/blobbyblobfish">Alice </a>, and <a href="https://github.com/SincerelyBrittany"> Brittany </a>. The goal for this sprint was to create an Educational application. With this in mind, we built an application using Ionic and React to help young kids learn about finances. The application allows a user to sign up and log in, then review courses and lessons. After a lesson is complete, a user will be redirected to a quiz, which upon completion will give the user "money" towards their "piggy-bank." This application was built in a two week span. 
     <br />
      ·
     <a href="https://github.com/blobbyblobfish/piggy-bank/issues">Report Bug</a>
@@ -132,4 +132,4 @@ Shivay:
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [twitter-shield]:https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FSincerelyBrittt
 [brittany-twitter-url]: https://twitter.com/SincerelyBrittt
-[product-screenshot]: https://github.com/blobbyblobfish/piggy-bank/blob/fix-search/track-your-workout-frontend/styles/workout_gif.gif
+[product-screenshot]: https://github.com/blobbyblobfish/piggy-bank/blob/readme/public/assets/images/readmeImage.png
