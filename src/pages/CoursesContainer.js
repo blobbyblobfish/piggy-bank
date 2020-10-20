@@ -12,8 +12,8 @@ export default function Courses(props) {
 
     return (
         <div className="coursesContainer">
-            <h1>Hi Test {} </h1>
-            <h2>Piggy Bank: $50 </h2>
+            {/* <h1>Hi Test {} </h1> */}
+            <h1>Your Piggy Bank: $50 </h1>
             {renderCourses()}
         </div>
     )

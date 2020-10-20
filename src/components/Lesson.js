@@ -1,12 +1,14 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom'
 import './Lesson.css';
 
-export default function Lesson(props) {
+function Lesson(props) {
 
     const lesson = props.lesson
 
-    console.log("HI THIS IS A TEST")
-    console.log(lesson)
+    function doneWatching() {
+        props.history.push(`/courses/lesson/${lesson.id}/quiz`) // push to quiz page
+    }
 
     return (
         <div className="lesson-container">
@@ -16,9 +18,10 @@ export default function Lesson(props) {
                 gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
-            <button className="done-btn">Done Watching</button> 
-            {/* If done watching is clicked, navigate to quiz */}
+            <button className="done-btn" onClick={doneWatching}>Done Watching</button> 
            
         </div>
     )
 }
+
+export default withRouter(Lesson)

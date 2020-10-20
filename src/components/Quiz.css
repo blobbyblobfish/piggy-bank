@@ -1,0 +1,23 @@
+.quizContainer{
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(132deg, #9C27B0, #673AB7, #3F51B5, #2196F3,#03A9F4, #00BCD4);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 30s ease infinite;
+}
+
+
+.quizContainer h1{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.questionsContainer{
+    width: 400px;
+    height: 100; 
+    margin-left: 40%;
+    background-color: white;
+}

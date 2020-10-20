@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Login from './components/login';
 import SignUp from './components/signup';
 import Lesson from './components/Lesson';
+import Quiz from './components/Quiz';
 import CoursesContainer from './pages/CoursesContainer.js';
 
 /* Core CSS required for Ionic components to work properly */
@@ -92,7 +93,7 @@ const App: React.FC = () => {
       course_id: 1, //this might be an easier way to find associations
       name: "Saving For Something Special",
       video_url: "https://www.youtube.com/embed/JkCmIxraWlM",
-      question: [
+      questions: [
         {
           question_text: "What does SMART stand for?",
           question_choices: {
@@ -118,6 +119,10 @@ const App: React.FC = () => {
     return <Lesson key={match.params.id} lesson={lessons.find(lesson => lesson.id === parseInt(match.params.id))} />
   }
 
+  function renderQuiz({ match }: RouteComponentProps<Props>) {
+    return <Quiz key={match.params.id + "quiz"} lesson={lessons.find(lesson => lesson.id === parseInt(match.params.id))} />
+  }
+
   return (
     <IonApp>
       <IonReactRouter>
@@ -127,39 +132,11 @@ const App: React.FC = () => {
           <Route path="/login" component={Login} exact={true} />
           <Route path="/signup" component={SignUp} exact={true} />
           <Route path="/courses" render={renderCourses} exact={true} />
-          <Route path="/lesson/:id" render={renderLesson} exact={true} />
+          <Route path="/courses/lesson/:id" render={renderLesson} exact={true} />
+          <Route path="/courses/lesson/:id/quiz" render={renderQuiz} exact={true} />
           </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>
-  
-        // <div className="auth-wrapper">
-        //   <div className="auth-inner">
-        //     <Switch>
-        //       <Route exact path='/' component={Login} />
-        //       <Route path="/log-in" component={Login} />
-        //       <Route path="/sign-up" component={SignUp} />
-        //     </Switch>
-        //   </div>
-        // </div>
-  
-      // <Router>
-      //     <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-      //       <div className="container">
-      //       <h1> Welcome to the Piggy-Bank </h1>
-      //         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-      //           <ul className="navbar-nav list-group">
-      //             <li className="nav-item list-group-item">
-      //               <Link className="nav-link" to={"/log-in"}>Login</Link>
-      //             </li>
-      //             <li className="nav-item list-group-item">
-      //               <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
-      //             </li>
-      //           </ul>
-      //         </div>
-      //       </div>
-      //     </nav>
-      // </Router>
-    
   );
 }
 
