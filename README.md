@@ -46,7 +46,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://www.example.com/)
 
-This application was built with a rails backend and Javascript frontend. 
+This application was built with a nodejs backend and Javascript frontend. 
 
 ### Built With
 * [Ionic](https://ionicframework.com/)
